@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<instances>
+
+<!-- ******************** WS ******************** -->
+	<!-- Configuration name-->
+	<instance name="WS">
+		<!-- Configurations parameters StorkSamlEngine  -->
+		<configuration name="SamlEngineConf">			
+			<parameter name="fileConfiguration" value="StorkSamlEngine_WS.xml" />
+		</configuration>
+
+		<!-- Settings module signature-->
+		<configuration name="SignatureConf">
+			<!-- Specific signature module -->
+			<parameter name="class" value="eu.stork.peps.auth.engine.core.impl.SignSW" />
+			<!-- Settings specific module -->
+			<parameter name="fileConfiguration" value="SignModule_WS.xml" />
+		</configuration>
+	</instance>	
+</instances>
